@@ -46,7 +46,7 @@ class MailClient():
         mail.logout()
         return email_message
 
-
-client1 = MailClient('login@gmail.com', 'qwerty')
-client1.send_message(['vasya@email.com', 'petya@email.com'],'Subject','Message')
-
+if __name__ == '__main__':
+    client1 = MailClient('login@gmail.com', 'qwerty')
+    client1.send_message(['vasya@email.com', 'petya@email.com'],'Subject','Message')
+    client1.receive_message()

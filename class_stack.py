@@ -37,9 +37,10 @@ def is_balance(brackets):
         print('Сбалансированно' if s.is_empty() else 'Несбалансированно')
 
 
-brackets = ['(((([{}]))))', '[([])((([[[]]])))]{()}', '{{[()]}}', '}{}', '{{[(])]}}', '[[{())}]]']
-for item in brackets:
-    is_balance(item)
+if __name__ == '__main__':
+    brackets = ['(((([{}]))))', '[([])((([[[]]])))]{()}', '{{[()]}}', '}{}', '{{[(])]}}', '[[{())}]]']
+    for item in brackets:
+        is_balance(item)
 
 
 
